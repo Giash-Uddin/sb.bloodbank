@@ -14,11 +14,7 @@ class Donor extends MX_Controller {
         $data['designation'] = $this->donor_model->getDesignation();
         $this->load->view('add', $data); // the view file name and data to pass
     }
-    public function addDonor() {
-        $this->load->view('add'); // the view file name and data to pass
-    }
-
-
+    
     public function save() {
         $data = array();
         $data['name']= $this->input->post('name');
@@ -37,6 +33,27 @@ class Donor extends MX_Controller {
         $data['passwd'] = $this->input->post('password');
         $data['usertype'] = $this->input->post('usertype');  
         $data['status'] = $this->input->post('status');       
+        $this->donor_model->save($data);
+    }
+    
+    public function registration() {
+        $data = array();
+        $data['name']= $this->input->post('name');
+        $data['cont'] = $this->input->post('contact_no');
+        $data['email'] = $this->input->post('email');
+        $data['bloodlist'] = $this->input->post('blood_group');
+        $data['desig'] = $this->input->post('designation');
+        $data['joindate'] = date($this->input->post('joining_date'));
+        $data['branch'] = $this->input->post('branch_name');
+        $data['gmo'] = $this->input->post('controlling_office');
+        $data['area'] = $this->input->post('area');
+        $data['polist'] = $this->input->post('district');
+        $data['dob'] = date($this->input->post('dob'));
+        $data['username'] = $this->input->post('username');
+        $data['indx'] = $this->input->post('index');
+        $data['passwd'] = $this->input->post('password');
+        $data['usertype'] = "DONOR";
+        $data['status'] = 1;       
         $this->donor_model->save($data);
     }
     public function delete() {

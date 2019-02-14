@@ -55,11 +55,13 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['account']='account/account/vieww';
 $route['login']='login/login/checkLogin';
+$route['logout']='login/login/logout';
 $route['dashboard']='dashboard/dashboard/view';
 $route['admin']='admin/admin/view';
 $route['branch']='branch/branch/view';
 $route['designation']='designation/designation/view';
 $route['donor']='donor/donor/view';
+$route['donation']='donation/donation/view';
 $route['upozila']='upozila/upozila/view';
 
 

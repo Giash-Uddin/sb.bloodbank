@@ -120,6 +120,7 @@ $autoload['model'] = array(
     'designation/designation_model',
     'donor/donor_model',
     'upozila/upozila_model',
+    'donation/donation_model',
     );
 
 

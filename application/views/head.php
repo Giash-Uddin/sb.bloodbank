@@ -9,7 +9,7 @@ $user_name = $this->load->session->userdata('user_name');
 $user_id = $this->session->userdata('user_id');
 ?> 
 <!DOCTYPE html>
-<head>
+<!--<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,11 +17,11 @@ $user_id = $this->session->userdata('user_id');
     <title>Ohee </title>
     <link rel="stylesheet" href="<?php echo base_url() ?>acss/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>acss/style.css">
-<!--    <link rel="stylesheet" href="<?php echo base_url() ?>jquery-ui-1.11.4.custom/jquery-ui.css">-->
+    <link rel="stylesheet" href="<?php echo base_url() ?>jquery-ui-1.11.4.custom/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>acss/datatables.css"/>
     <script src="<?php echo base_url() ?>ajs/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="<?php echo base_url() ?>ajs/bootstrap.min.js" type="text/javascript"></script>
-<!--    <script src="<?php echo base_url() ?>jquery-ui-1.11.4.custom/jquery-ui.js" type="text/javascript"></script>-->
+    <script src="<?php echo base_url() ?>jquery-ui-1.11.4.custom/jquery-ui.js" type="text/javascript"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>ajs/jquery-ui.js"></script>
     <script type="text/javascript" src="<?php echo base_url() ?>ajs/datatables.js"></script>
     <script src="<?php echo base_url() ?>ajs/jquery.battatech.excelexport.min.js"></script>
@@ -33,10 +33,10 @@ $user_id = $this->session->userdata('user_id');
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>acss/pie_chart_css/ext-all.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>acss/pie_chart_css/example.css" />
 
-<!--   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="<?php echo base_url() ?>ajs/left_menu.js"></script>
     <?php echo link_tag('acss/jquery-ui.css'); ?>
- <!--   <script src="<?php echo base_url(); ?>ajs/jquery-1.10.2.js"></script>-->
+    <script src="<?php echo base_url(); ?>ajs/jquery-1.10.2.js"></script>
     <script src="<?php echo base_url() ?>ajs/jquery.canvasjs.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url() ?>ajs/pie_chart_js/ext-all.js"></script>
     <script type="text/javascript" src="<?php echo base_url() ?>ajs/pie_chart_js/example-data.js"></script>
@@ -95,7 +95,7 @@ $user_id = $this->session->userdata('user_id');
             });
         });
     </script>
-<!--    <script>
+    <script>
          $(function() {
          $( "#datepicker1" ).datepicker({
             changeMonth: true,
@@ -110,7 +110,7 @@ $user_id = $this->session->userdata('user_id');
             changeYear: true
           });
          });
-    </script>-->
+    </script>
     <script>
         $(document).ready(function() {
             $('#example1').DataTable({
@@ -256,4 +256,4 @@ $user_id = $this->session->userdata('user_id');
             <div class="logout_btn" onclick="logOut()">Log Out</div>
         </nav>         
     </div>
-    <div class="col-lg-12 col-md-12 row" style="padding-top: 80px"></div>
+    <div class="col-lg-12 col-md-12 row" style="padding-top: 80px"></div>-->

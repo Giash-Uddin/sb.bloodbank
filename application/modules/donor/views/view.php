@@ -3,10 +3,7 @@ $user_type = $this->session->userdata('user_type');
 ?>
 <section id="donor_manage">
     <div class="container">
-        <div class="btn btn-group">
         <button class="btn btn-lg btn-success" onclick="menu_change('donor/donor/addDonor')">Add Donor</button>
-        <button class="btn btn-lg btn-success" onclick="menu_change('donor/donor/addDonor')">Donation Entry</button>
-        </div>
         <br/>
         <br/>
         <div class="row justify-content-center">
@@ -15,7 +12,7 @@ $user_type = $this->session->userdata('user_type');
                 <div class="card">
                     <div class="card-header">Donor</div>
                     <div class="card-body">
-                        <table id="donor_table" class="table example table-hover dataTable" border="1" cellspacing="0" width="99%">
+                        <table id="myDatatable" class="table example table-hover dataTable" border="1" cellspacing="0" width="99%">
                             <thead>
                                 <tr style="background-color: #cccccc; color: white">
                                     <th class="text-center">SL No</th>
@@ -130,5 +127,8 @@ $user_type = $this->session->userdata('user_type');
             }
         });
     }
+    $(document).ready(function() {
+        $('myDatatable').datatable();
+    });
 </script>
 

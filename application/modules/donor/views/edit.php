@@ -189,7 +189,7 @@ foreach ($donor as $dnr) {
                             <div class="form-group row">
                                 <label for="index" class="col-md-4 col-form-label text-md-right">Index</label>
                                 <div class="col-md-6">
-                                    <input id="index" type="text" class="form-control" name="index" value="<?php echo $index; ?>" required autofocus>
+                                    <input id="index" type="text" class="form-control" name="index" value="<?php echo $index; ?>" required autofocus onkeypress="return indexValidation(value, event)">
                                     <span class="invalid-feedback" role="alert">
                                         <strong>Index must be filled up</strong>
                                     </span>

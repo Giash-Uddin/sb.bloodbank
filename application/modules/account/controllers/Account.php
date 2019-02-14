@@ -4,8 +4,8 @@ class Account extends MX_Controller {
 
     public function vieww() {
         $data = array();
-        $data['partydropdown'] = $this->account_model->partyDropdown();
-        $data['categorydropdown'] = $this->account_model->categoryDropdown("INCOME");
+//        $data['partydropdown'] = $this->account_model->partyDropdown();
+//        $data['categorydropdown'] = $this->account_model->categoryDropdown("INCOME");
         $this->load->view('vieww', $data); // the view file name and data to pass
     }
     public function user_view() {
